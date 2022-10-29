@@ -5,10 +5,13 @@
  */
 package services;
 
-/**
- *
- * @author amida
- */
+import models.Role;
+import dataaccess.RoleDB;
+import java.util.ArrayList;
+import java.util.List;
+
 public class RoleService {
+    private final RoleDB accessRole = new RoleDB();
+    
     
 }
