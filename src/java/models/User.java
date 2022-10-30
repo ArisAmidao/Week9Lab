@@ -8,17 +8,17 @@ import java.io.Serializable;
 
 public class User implements Serializable{
     
-    private String email;
-    private String fname;
-    private String lname;
-    private String password;
-    private int role;
+    String email;
+    String fname;
+    String lname;
+    String password;
+    Role role;
     
     public User(){
         
     }
     
-    public User(String email, String fname, String lname, String password, int role) {
+    public User(String email, String fname, String lname, String password, Role role) {
         this.email = email;
         this.fname = fname;
         this.lname = lname;
@@ -38,7 +38,7 @@ public class User implements Serializable{
     public void setPassword(String password) {
         this.password = password;
     }
-    public void setRole(int role) {
+    public void setRole(Role role) {
         this.role = role;
     }
     
@@ -54,7 +54,7 @@ public class User implements Serializable{
     public String getPassword() {
         return password;
     }
-    public int getRole() {
+    public Role getRole() {
         return role;
     }
     
