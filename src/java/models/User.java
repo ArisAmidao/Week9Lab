@@ -24,11 +24,11 @@ public class User implements Serializable{
     public void setEmail(String email) {
         this.email = email;
     }
-    public void setFname(String fname) {
-        this.firstName = fname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public void setLname(String lname) {
-        this.firstName = lname;
+    public void setLastName(String lastName) {
+        this.firstName = lastName;
     }
     public void setPassword(String password) {
         this.password = password;
@@ -40,10 +40,10 @@ public class User implements Serializable{
     public String getEmail() {
         return email;
     }
-    public String getFname() {
+    public String getFirstName() {
         return firstName;
     }
-    public String getLname() {
+    public String getLastName() {
         return lastName;
     }
     public String getPassword() {

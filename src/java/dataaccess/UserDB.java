@@ -86,8 +86,8 @@ public class UserDB {
         try {
             ps = con.prepareStatement(sql);
             ps.setString(1, user.getEmail());
-            ps.setString(2, user.getFname());
-            ps.setString(3, user.getLname());
+            ps.setString(2, user.getFirstName());
+            ps.setString(3, user.getLastName());
             ps.setString(4, user.getPassword());
             ps.setInt(5, roleService.getRoleID(user.getRole()));
             ps.executeUpdate();
@@ -107,8 +107,8 @@ public class UserDB {
 
         try {
             ps = con.prepareStatement(sql);
-            ps.setString(1, user.getFname());
-            ps.setString(2, user.getLname());
+            ps.setString(1, user.getFirstName());
+            ps.setString(2, user.getLastName());
             ps.setString(3, user.getPassword());
             ps.setInt(4, roleService.getRoleID(user.getRole()));
             ps.setString(5, user.getEmail());
