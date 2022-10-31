@@ -4,8 +4,8 @@ import java.io.Serializable;
 public class User implements Serializable{
     
     String email;
-    String fname;
-    String lname;
+    String firstName;
+    String lastName;
     String password;
     Role role;
     
@@ -13,10 +13,10 @@ public class User implements Serializable{
         
     }
     
-    public User(String email, String fname, String lname, String password, Role role) {
+    public User(String email, String firstName, String lastName, String password, Role role) {
         this.email = email;
-        this.fname = fname;
-        this.lname = lname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.password = password;
         this.role = role;
     }
@@ -25,10 +25,10 @@ public class User implements Serializable{
         this.email = email;
     }
     public void setFname(String fname) {
-        this.fname = fname;
+        this.firstName = fname;
     }
     public void setLname(String lname) {
-        this.lname = lname;
+        this.firstName = lname;
     }
     public void setPassword(String password) {
         this.password = password;
@@ -41,10 +41,10 @@ public class User implements Serializable{
         return email;
     }
     public String getFname() {
-        return fname;
+        return firstName;
     }
     public String getLname() {
-        return lname;
+        return lastName;
     }
     public String getPassword() {
         return password;
