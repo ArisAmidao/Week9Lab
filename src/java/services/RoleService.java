@@ -13,16 +13,11 @@ public class RoleService {
         return roles;
     }
 
-    public int getRoleID(Role role) {
-        String name = role.getRoleName();
-        if (name.equals("system admin")) {
+    public int getRoleID(String roleName) {
+        if (roleName.equals("system admin")) {
             return 1;
         } else {
             return 2;
         }
-    }
-
-    public int getRoleID(String userRoleName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
