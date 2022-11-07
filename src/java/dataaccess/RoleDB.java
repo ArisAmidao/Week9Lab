@@ -8,7 +8,6 @@ import java.util.List;
 import models.Role;
 import javax.persistence.EntityManager;
 
-
 public class RoleDB {
 
     public List<Role> getAllRoles() throws Exception {
@@ -21,7 +20,7 @@ public class RoleDB {
             em.close();
         }
     }
-
+    
     public Role getRole(int roleID) throws Exception {
         EntityManager em = DBUtil.getEmFactory().createEntityManager();
 
@@ -31,6 +30,5 @@ public class RoleDB {
         } finally {
             em.close();
         }
-
     }
 }

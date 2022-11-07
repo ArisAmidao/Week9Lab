@@ -8,11 +8,7 @@ import models.Role;
 import models.User;
 import services.RoleService;
 
-
-
-
 public class UserDB {
-
     RoleDB roleDB = new RoleDB();
     RoleService roleService = new RoleService();
 
