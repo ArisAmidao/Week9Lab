@@ -21,4 +21,8 @@ public class RoleService {
             return 2;
         }
     }
+
+    public int getRoleID(String userRoleName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
