@@ -74,10 +74,10 @@ public class UserServlet extends HttpServlet {
             if (userService.isNotEmpty(email, fname, lname, password)) {
                 switch (action) {
                     case "add":
-                        userService.insertUser(email, fname, lname, password, role);
+                        userService.insertUser(email, fname, lname, password, Role);
                         break;
                     case "Update":
-                        userService.updateUser(email, fname, lname, password, role);
+                        userService.updateUser(email, fname, lname, password, Role);
                         break;
                 }
             } else {
